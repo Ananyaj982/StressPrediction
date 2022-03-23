@@ -1,1 +1,18 @@
+Fitbit-based Application for Stress Tracking through Voice and Physiological Biometric Data
+Requirements:
+
+Python (main) libraries for deep learning and audio processing and logistic regression: Matplotlib,IPython,numpy,pandas,fsspec,firebase,sklearn,Threading,Tensorflow, librosa
+For flask: pymongo,flask-executor,dnspython
 It is useful to install CUDA and CUDNN for running the model as a python file. Othewise run in Jupyter Notebook.
+The flask app is connected to firebase and firebase to the data model.
+Run app.py
+Run model1.py
+Run extract_files.py for the google api download part.
+These 3 are part of one package.
+Ensure that the voice recordings are in wav format and enable automatic upload of audio files using callu to google drive. An end user can monitor his stress levels on the web-UI.
+Summary
+RAVDESS for training voice data, NON-EEG dataset for training PPG DATA. Logit model for ppg,(HR AND SPO2 as inputs for the ppg parameters) 
+and CNN for audio classification (binary) Final combined weighted model, flask updates graphs in near time.
+Project1-contains flaskapp
+Change local paths as needed
+Since model.h5 is provided you don't need to train with RAVDESS, directly load the model1.py and audio.csv
