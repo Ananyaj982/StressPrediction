@@ -1,0 +1,35 @@
+{
+  "devDependencies": {
+    "@fitbit/sdk": "~4.3.0"
+  },
+  "fitbit": {
+    "appUUID": "148ce6ae-8911-499c-899f-21461a87946d",
+    "appType": "app",
+    "appDisplayName": "For Demo",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "#e91e63",
+    "requestedPermissions": [
+      "access_heart_rate",
+      "run_background",
+      "access_activity",
+      "access_user_profile",
+      "access_internet",
+      "access_location",
+      "access_exercise",
+      "access_calendar",
+      "access_sleep"
+    ],
+    "buildTargets": [
+      "mira",
+      "gemini",
+      "meson",
+      "higgs"
+    ],
+    "i18n": {
+      "en-US": {
+        "name": "For Demo"
+      }
+    },
+    "defaultLanguage": "en-US"
+  }
+}
