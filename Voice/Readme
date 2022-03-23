@@ -1,0 +1,1 @@
+It is useful to install CUDA and CUDNN for running the model as a python file. Othewise run in Jupyter Notebook.
